@@ -65,24 +65,21 @@ main {
 
 .heartSection {
 
-    z-index: 10;
+
     height: 250px;
     width: 210px;
     position: absolute;
-
     color: red;
-    visibility: hidden;
+    visibility: 0;
+    bottom: 0;
+    left: 0;
 
 }
 .heartSection:hover{
 
-    z-index: 10;
-    height: 250px;
-    width: 210px;
-    position: absolute;
 
-    color: red;
-    visibility: visible;
+    visibility: 1;
+
 
 }
 
