@@ -24,7 +24,6 @@ main {
     z-index: 0;
     height: 250px;
     width: 210px;
-
     background-color: grey;
     border: 1px solid black;
     border-radius: 15px
@@ -58,33 +57,33 @@ main {
     background-color: red;
 }
 
+.green{
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
 .img {
-    width: 160px;
+    width: 150px;
     margin: 5px auto;
 }
 
-.heartSection {
-
-
+span {
+    display: inline-block;
     height: 250px;
     width: 210px;
-    position: absolute;
-    color: red;
-    visibility: 0;
-    bottom: 0;
-    left: 0;
-
-}
-.heartSection:hover{
-
-
-    visibility: 1;
-
-
-}
-
-.heart {
     margin: 5px auto;
     text-align: center;
-    line-height: 20px;
+    line-height: 465px;
+    color: red;
+}
+.heart span::after{
+    content: "\2764";
+    visibility: hidden;
+}
+
+.heart:hover span::after{
+    visibility: visible;
 }
