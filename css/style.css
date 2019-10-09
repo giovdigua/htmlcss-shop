@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 main {
@@ -20,6 +21,7 @@ main {
 }
 
 .card {
+    z-index: 0;
     height: 250px;
     width: 210px;
 
@@ -59,4 +61,33 @@ main {
 .img {
     width: 160px;
     margin: 5px auto;
+}
+
+.heartSection {
+
+    z-index: 10;
+    height: 250px;
+    width: 210px;
+    position: absolute;
+
+    color: red;
+    visibility: hidden;
+
+}
+.heartSection:hover{
+
+    z-index: 10;
+    height: 250px;
+    width: 210px;
+    position: absolute;
+
+    color: red;
+    visibility: visible;
+
+}
+
+.heart {
+    margin: 5px auto;
+    text-align: center;
+    line-height: 20px;
 }
